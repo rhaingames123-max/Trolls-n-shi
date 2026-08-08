@@ -1,0 +1,12 @@
+{
+  "name": "wallpaper-troll-relay",
+  "version": "1.0.0",
+  "description": "Relay server that pairs two clients by a short code and forwards messages between them once both consent.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ws": "^8.17.0"
+  }
+}
