@@ -1,0 +1,26 @@
+{
+  "name": "wallpaper-troll",
+  "version": "1.0.0",
+  "description": "Pair with a friend by code and troll each other's wallpaper - with consent.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --mac --win"
+  },
+  "build": {
+    "appId": "com.example.wallpapertroll",
+    "productName": "Wallpaper Troll",
+    "files": ["**/*", "!node_modules/electron-builder"],
+    "mac": { "target": "dmg", "category": "public.app-category.utilities" },
+    "win": { "target": "nsis" }
+  },
+  "dependencies": {
+    "jimp": "^0.22.12",
+    "wallpaper": "^7.2.1",
+    "ws": "^8.17.0"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}
